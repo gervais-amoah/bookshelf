@@ -8,7 +8,7 @@ import {Logo} from './components/logo'
 import {useAsync} from './utils/hooks'
 
 function LoginForm({onSubmit, submitButton}) {
-  const {isLoading, isError, error, run} = useAsync()
+  const {isLoading, isError, error, run, data} = useAsync()
   function handleSubmit(event) {
     event.preventDefault()
     const {username, password} = event.target.elements
